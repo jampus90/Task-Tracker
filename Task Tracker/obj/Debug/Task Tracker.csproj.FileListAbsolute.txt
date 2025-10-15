@@ -6,3 +6,23 @@ C:\Users\Alexandre\source\repos\Task Tracker\Task Tracker\obj\Debug\Task Tracker
 C:\Users\Alexandre\source\repos\Task Tracker\Task Tracker\obj\Debug\Task Tracker.exe
 C:\Users\Alexandre\source\repos\Task Tracker\Task Tracker\obj\Debug\Task Tracker.pdb
 C:\Users\Alexandre\source\repos\Task Tracker\Task Tracker\obj\Debug\Task Tracker.exe.config
+C:\Users\Alexandre\source\repos\Task Tracker\Task Tracker\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Alexandre\source\repos\Task Tracker\Task Tracker\bin\Debug\System.Buffers.dll
+C:\Users\Alexandre\source\repos\Task Tracker\Task Tracker\bin\Debug\System.IO.Pipelines.dll
+C:\Users\Alexandre\source\repos\Task Tracker\Task Tracker\bin\Debug\System.Memory.dll
+C:\Users\Alexandre\source\repos\Task Tracker\Task Tracker\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Alexandre\source\repos\Task Tracker\Task Tracker\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Alexandre\source\repos\Task Tracker\Task Tracker\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Alexandre\source\repos\Task Tracker\Task Tracker\bin\Debug\System.Text.Json.dll
+C:\Users\Alexandre\source\repos\Task Tracker\Task Tracker\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Alexandre\source\repos\Task Tracker\Task Tracker\bin\Debug\System.ValueTuple.dll
+C:\Users\Alexandre\source\repos\Task Tracker\Task Tracker\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Alexandre\source\repos\Task Tracker\Task Tracker\bin\Debug\System.Buffers.xml
+C:\Users\Alexandre\source\repos\Task Tracker\Task Tracker\bin\Debug\System.IO.Pipelines.xml
+C:\Users\Alexandre\source\repos\Task Tracker\Task Tracker\bin\Debug\System.Memory.xml
+C:\Users\Alexandre\source\repos\Task Tracker\Task Tracker\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Alexandre\source\repos\Task Tracker\Task Tracker\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Alexandre\source\repos\Task Tracker\Task Tracker\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Alexandre\source\repos\Task Tracker\Task Tracker\bin\Debug\System.Text.Json.xml
+C:\Users\Alexandre\source\repos\Task Tracker\Task Tracker\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Alexandre\source\repos\Task Tracker\Task Tracker\obj\Debug\Task Tra.8401731A.Up2Date

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.Json;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,8 @@ namespace Task_Tracker
     {
         static void Main(string[] args)
         {
+            CRUDManager crudManager = new CRUDManager();
+
             Console.WriteLine("Welcome to your ToDo List!");
             Console.WriteLine("What do you want to do?");
             Console.WriteLine("" +
@@ -23,26 +26,49 @@ namespace Task_Tracker
 
             int selectedOption = Convert.ToInt32(Console.ReadLine());
 
+
             switch(selectedOption)
             {
                 case 0:
-                    Console.WriteLine("Task adicionada");
+                    Console.WriteLine("Type your new task description: ");
+                    string description = Console.ReadLine();
+                    string createTask = crudManager.CreateTask(description);
                     break;
+
                 case 1:
-                    Console.WriteLine("Task atualizada");
+                    Console.WriteLine("Which task do you want o update:");
+                    int id = Convert.ToInt32(Console.ReadLine());
+
+                    Console.WriteLine("Whats the new description?");
+                    string newDescription = Console.ReadLine();
+
+                    Console.WriteLine("What's the new status?");
+                    string newStatus = Console.ReadLine();
+
+                    string updateTask = crudManager.UpdateTask(id, newDescription, newStatus);
                     break;
+
                 case 2:
-                    Console.WriteLine("Task deletada");
+                    Console.WriteLine("Which task do you want to delete?");
+                    id = Convert.ToInt32(Console.ReadLine());
+
+                    string deleteTask = crudManager.DeleteTask(id);
                     break;
+
                 case 3:
-                    Console.WriteLine("Listagem de todas task");
+                    List<TaskProperties> listTasks = crudManager.ListAllTasks();
+                    string json = JsonSerializer.Serialize(listTasks, new JsonSerializerOptions { WriteIndented = true });
+                    Console.WriteLine(json);
                     break;
+
                 case 4:
                     Console.WriteLine("Listagem de task feitas");
                     break;
+
                 case 5:
                     Console.WriteLine("Listagem de tasks não iniciadas");
                     break;
+
                 case 6:
                     Console.WriteLine("Listagem de tasks em progresso");
                     break;
