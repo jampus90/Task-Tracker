@@ -113,5 +113,50 @@ namespace Task_Tracker
 
             return tasks;
         }
+
+        public List<TaskProperties> ListDoneTasks()
+        {
+            if (!File.Exists(path))
+            {
+                return new List<TaskProperties>();
+            }
+
+            string jsonData = File.ReadAllText(path);
+            List<TaskProperties> tasks = JsonSerializer.Deserialize<List<TaskProperties>>(jsonData) ?? new List<TaskProperties>();
+
+            var doneTasks = tasks.Where(b => b.Status == "Done").ToList();
+
+            return doneTasks;
+        }
+
+        public List<TaskProperties> ListNotDoneTasks()
+        {
+            if (!File.Exists(path))
+            {
+                return new List<TaskProperties>();
+            }
+
+            string jsonData = File.ReadAllText(path);
+            List<TaskProperties> tasks = JsonSerializer.Deserialize<List<TaskProperties>>(jsonData) ?? new List<TaskProperties>();
+
+            var doneTasks = tasks.Where(b => b.Status == "Not started").ToList();
+
+            return doneTasks;
+        }
+
+        public List<TaskProperties> ListInProgressTasks()
+        {
+            if (!File.Exists(path))
+            {
+                return new List<TaskProperties>();
+            }
+
+            string jsonData = File.ReadAllText(path);
+            List<TaskProperties> tasks = JsonSerializer.Deserialize<List<TaskProperties>>(jsonData) ?? new List<TaskProperties>();
+
+            var inProgressTasks = tasks.Where(b => b.Status == "In Progress").ToList();
+
+            return inProgressTasks;
+        }
     }
 }

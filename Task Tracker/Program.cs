@@ -62,15 +62,21 @@ namespace Task_Tracker
                     break;
 
                 case 4:
-                    Console.WriteLine("Listagem de task feitas");
+                    List<TaskProperties> listDoneTasks = crudManager.ListDoneTasks();
+                    string doneJson = JsonSerializer.Serialize(listDoneTasks, new JsonSerializerOptions { WriteIndented = true });
+                    Console.WriteLine(doneJson);
                     break;
 
                 case 5:
-                    Console.WriteLine("Listagem de tasks não iniciadas");
+                    List<TaskProperties> listNotDoneTasks = crudManager.ListNotDoneTasks();
+                    string notDoneJson = JsonSerializer.Serialize(listNotDoneTasks, new JsonSerializerOptions { WriteIndented = true });
+                    Console.WriteLine(notDoneJson);
                     break;
 
                 case 6:
-                    Console.WriteLine("Listagem de tasks em progresso");
+                    List<TaskProperties> listInProgressTasks = crudManager.ListInProgressTasks();
+                    string inProgressJson = JsonSerializer.Serialize(listInProgressTasks, new JsonSerializerOptions { WriteIndented = true });
+                    Console.WriteLine(inProgressJson);
                     break;
             }
         }
